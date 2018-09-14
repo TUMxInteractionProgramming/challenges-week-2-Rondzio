@@ -1,0 +1,35 @@
+
+/*    Global        */
+
+* {
+    /* #2 #font #faces */
+    font-family: 'Arial', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* #2 #colorful #background */
+    background-color: #F5F5F5;
+}
+
+h1 {
+    /* #2 #colourful #app-bar */
+    background-color: #3F51B5;
+    color: white;
+}
+
+button {
+    /* #2 #colourful #plusfive */
+    background-color: #CDDC39;
+    color: black;
+    /* #2 #font capital #letters */  
+}
+a, button {
+    text-transform: uppercase;
+}
+
+/*    App bar       */
+/*    Channels list */
+/*    Tab bar       */
+/*    Messages      */
