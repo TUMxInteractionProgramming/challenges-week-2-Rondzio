@@ -12,55 +12,9 @@
     <!-- We need to specify the character encoding, since we use chinese characters -->
     <meta charset="UTF-8">
 
-    <!-- #2 #css #elements -->
-    <style>
-
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
 
 
 
-        /*styles for channel area*/
-        ul {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-        a {
-            color: black;
-        }
-
-    </style>
 
 </head>
 
@@ -68,19 +22,19 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-<h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Image of moocus" style="height: 56px">chatter|app</h1>
+<h1 class="app-bar"><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Image of moocus" style="height: 56px">chatter|app</h1>
 
 <!-- #1 #channels #topics -->
 <ul style="list-style-type: none;">
 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
-<li>#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
+<li class="curr-channel">#SevenContinents <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
 <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
 <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
 <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
 </ul>
 
 <!-- #1 #channels #buttons -->
-<div style="background-color: white;">
+<div id="tap-bar">
 <button><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb-o">new</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire">trending</button>
 <button><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star">favorites</button>
@@ -89,7 +43,7 @@
 
 <!-- chat area -->
 <!-- #1 #chat #name -->
-<h1>#SevenContinents
+<h1 class="app-bar">#SevenContinents
     <!-- #1 #chat #location is wrapped in small tag-->
     <small>by
         <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
@@ -98,7 +52,7 @@
 </h1>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%;">
+<div class="message my-message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/cheeses.yard.applies" target="_blank">cheeses.yard.applies</a></strong>
@@ -113,7 +67,7 @@
 </div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%;">
+<div class="message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/truck.cotton.zone" target="_blank">truck.cotton.zone</a></strong>
@@ -128,7 +82,7 @@
 </div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%;">
+<div class="message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/thus.best.dishes" target="_blank">thus.best.dishes</a></strong>
@@ -143,7 +97,7 @@
 </div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%;">
+<div class="message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/driveway.helper.magazine" target="_blank">driveway.helper.magazine</a></strong>
@@ -158,7 +112,7 @@
 </div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<div style="width: 80%;">
+<div class="message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/escapes.pitch.saucepan" target="_blank">escapes.pitch.saucepan</a></strong>
@@ -173,7 +127,7 @@
 </div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
-<div style="width: 80%;">
+<div class="message">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
     <strong><a href="https://map.what3words.com/meanings.identity.pays" target="_blank">meanings.identity.pays</a></strong>
